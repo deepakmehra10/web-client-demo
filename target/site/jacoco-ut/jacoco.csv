@@ -1,0 +1,6 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+web-client-demo,com.deepak.service,Post.PostBuilder,62,0,0,0,1,0,7,0,7,0
+web-client-demo,com.deepak.service,ContentServiceImpl,0,83,0,0,0,13,0,7,0,7
+web-client-demo,com.deepak.service,Post,4,27,0,0,0,5,1,5,1,5
+web-client-demo,com.deepak,WebClientApplication,8,0,0,0,3,0,2,0,2,0
+web-client-demo,com.deepak.controller,MyController,11,0,0,0,4,0,2,0,2,0

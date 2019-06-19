@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ContentServiceImpl.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">web-client-demo</a> &gt; <a href="index.source.html" class="el_package">com.deepak.service</a> &gt; <span class="el_source">ContentServiceImpl.java</span></div><h1>ContentServiceImpl.java</h1><pre class="source lang-java linenums">package com.deepak.service;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.MediaType;
+import org.springframework.stereotype.Service;
+import org.springframework.web.reactive.function.client.ExchangeFilterFunction;
+import org.springframework.web.reactive.function.client.WebClient;
+import reactor.core.publisher.Mono;
+
+import java.util.logging.Logger;
+
+@Service
+public class ContentServiceImpl implements ContentService {
+    
+<span class="fc" id="L16">    private static final Logger LOGGER = Logger.getLogger(ContentServiceImpl.class.getName());</span>
+    
+    private final WebClient webClient;
+    
+<span class="fc" id="L20">    public ContentServiceImpl(@Value(&quot;${content-service}&quot;) String baseURL) {</span>
+<span class="fc" id="L21">        this.webClient = WebClient.builder().baseUrl(baseURL)</span>
+<span class="fc" id="L22">                .defaultHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_UTF8_VALUE)</span>
+<span class="fc" id="L23">                .filter(logRequest())</span>
+<span class="fc" id="L24">                .build();</span>
+<span class="fc" id="L25">    }</span>
+    
+    @Override
+    public Mono&lt;Post&gt; getPost(int id) {
+<span class="fc" id="L29">        return webClient.get().uri(&quot;posts/{id}&quot;, id).retrieve().bodyToMono(Post.class);</span>
+    }
+    
+    private ExchangeFilterFunction logRequest() {
+<span class="fc" id="L33">        return (clientRequest, next) -&gt; {</span>
+<span class="fc" id="L34">            LOGGER.info(&quot;Request: {} {}&quot; + clientRequest.method() + clientRequest.url());</span>
+<span class="fc" id="L35">            clientRequest.headers()</span>
+<span class="fc" id="L36">                    .forEach((name, values) -&gt; values.forEach(value -&gt; LOGGER.info(&quot;{}={}&quot; + name + value)));</span>
+<span class="fc" id="L37">            return next.exchange(clientRequest);</span>
+        };
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.0.201801022044</span></div></body></html>
