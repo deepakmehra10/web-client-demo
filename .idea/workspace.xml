@@ -26,14 +26,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="4" />
-          <entry key="java" value="865" />
+          <entry key="java" value="875" />
           <entry key="properties" value="38" />
           <entry key="xml" value="64" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="865" />
+          <entry key="JAVA" value="875" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="Properties" value="38" />
           <entry key="XML" value="64" />
@@ -104,7 +104,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/deepak/ContentServiceImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
+            <state relative-caret-position="68">
               <caret line="22" column="101" selection-start-line="22" selection-start-column="101" selection-end-line="22" selection-end-column="101" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -155,6 +155,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -183,6 +186,7 @@
     <option name="width" value="1366" />
     <option name="height" value="770" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <hideEmptyPackages ProjectPane="true" />
@@ -261,7 +265,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="app&#9;FILE&#9;file:///home/knoldus/Desktop/rccl/web-client-demo/src/main/resources/application.properties" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560938550728" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560938852730" />
     <property name="last_opened_file_path" value="$USER_HOME$/demo" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -348,15 +352,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ContentServiceImplTest - 2019.06.12 at 16h 09m 54s.xml">
-      <configuration name="ContentServiceImplTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ContentServiceImplTest - 2019.06.12 at 16h 11m 36s.xml">
-      <configuration name="ContentServiceImplTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ContentServiceImplTest_shouldReturnPost - 2019.06.19 at 13h 17m 06s.xml">
-      <configuration name="ContentServiceImplTest.shouldReturnPost" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ContentServiceImplTest - 2019.06.19 at 15h 24m 30s.xml">
       <configuration name="ContentServiceImplTest" configurationId="JUnit" />
     </history-entry>
@@ -378,10 +373,18 @@
     <history-entry file="ContentServiceImplTest - 2019.06.19 at 15h 30m 07s.xml">
       <configuration name="ContentServiceImplTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ContentServiceImplTest - 2019.06.19 at 15h 31m 06s.xml">
+      <configuration name="ContentServiceImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ContentServiceImplTest - 2019.06.19 at 15h 31m 59s.xml">
+      <configuration name="ContentServiceImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ContentServiceImplTest - 2019.06.19 at 15h 32m 35s.xml">
+      <configuration name="ContentServiceImplTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-2" width="1366" height="770" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.19545455" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -393,18 +396,18 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.48753893" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.48753893" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="DB Execution Console" order="7" />
       <window_info anchor="bottom" id="SBT Console" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.47040498" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.6875" />
       <window_info anchor="bottom" id="Docker" order="10" />
       <window_info anchor="bottom" id="Graph Database Console" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="bottom" id="Messages" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -487,7 +490,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/deepak/ContentServiceImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
+        <state relative-caret-position="68">
           <caret line="22" column="101" selection-start-line="22" selection-start-column="101" selection-end-line="22" selection-end-column="101" />
           <folding>
             <element signature="imports" expanded="true" />
