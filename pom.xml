@@ -84,6 +84,11 @@
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
         <version>${maven.jacoco.plugin.version}</version>
+        <configuration>
+          <excludes>
+            <exclude>**/*WebClientApplication.*</exclude>
+          </excludes>
+        </configuration>
         <executions>
           <execution>
             <id>pre-unit-test</id>

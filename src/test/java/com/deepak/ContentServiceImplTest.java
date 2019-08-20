@@ -20,7 +20,7 @@ public class ContentServiceImplTest {
     
     private final MockWebServer mockWebServer = new MockWebServer();
     
-    private final ContentServiceImpl contentServiceImpl = new ContentServiceImpl(mockWebServer.url("/").toString());
+    private final ContentServiceImpl contentServiceImpl = new ContentServiceImpl(mockWebServer.url("localhost/").toString());
     
     @After
     public void tearDown() throws IOException {
@@ -33,7 +33,8 @@ public class ContentServiceImplTest {
                 new MockResponse()
                         .setResponseCode(200)
                         .setHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
-                        .setBody("{\"userId\": 1,\"id\": 1, \"title\": \"sunt aut facere repellat provident occaecati excepturi optio reprehenderit\", \"body\": \"quia et suscipit\"}"));
+                        .setBody("{\"userId\": 1,\"id\": 1, \"title\": \"sunt aut facere repellat provident occaecati "
+                                + "excepturi optio reprehenderit\", \"body\": \"quia et suscipit\"}"));
         
         Post response = contentServiceImpl.getPost(1).block();
         assertThat(response.getId(), is(equalTo(1)));

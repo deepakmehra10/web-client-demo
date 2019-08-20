@@ -8,5 +8,4 @@ public class WebClientApplication {
     public static void main(String[] args) {
         SpringApplication.run(WebClientApplication.class, args);
     }
-    
 }

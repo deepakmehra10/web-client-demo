@@ -17,7 +17,7 @@ public class MyController {
     }
     
     @GetMapping("/posts/{id}")
-    Mono<Post> getPost(@PathVariable int id) {
+    public Mono<Post> getPost(@PathVariable int id) {
         return contentService.getPost(id);
     }
 }
